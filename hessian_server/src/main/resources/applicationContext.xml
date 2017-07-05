@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+	  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	  http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd
+	  http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<description>service related beans</description>
+	
+	<bean id="demoService" class="com.darryl.alpha.hessian_server.service.DemoService" />  
+    <bean name="/helloHessian"  
+        class="org.springframework.remoting.caucho.HessianServiceExporter">  
+        <property name="service" ref="demoService" />  
+        <property name="serviceInterface" value="com.darryl.alpha.hessian_server.service.DemoApi" />  
+    </bean>  
+	
+ </beans>
