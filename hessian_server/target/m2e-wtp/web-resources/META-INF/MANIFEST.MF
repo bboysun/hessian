@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: hessian_test
-Implementation-Version: ${com.darryl.alpha.version}
+Implementation-Version: 1.0.0
 Built-By: Darryl
 Implementation-Vendor-Id: com.darryl.alpha
 Build-Jdk: 1.8.0_51

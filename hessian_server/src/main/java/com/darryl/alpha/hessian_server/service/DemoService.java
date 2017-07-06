@@ -5,7 +5,8 @@ package com.darryl.alpha.hessian_server.service;
 
 import org.springframework.stereotype.Service;
 
-import com.darryl.alpha.hessian_server.model.User;
+import com.darryl.alpha.hessian_api_common.service.DemoApi;
+import com.darryl.alpha.hessian_model_common.model.User;
 
 /**
  * @author: darryl

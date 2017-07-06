@@ -3,7 +3,7 @@ package com.darryl.alpha.hessian_client.service;
 import java.net.MalformedURLException;
 
 import com.caucho.hessian.client.HessianProxyFactory;
-import com.darryl.alpha.hessian_server.service.DemoApi;
+import com.darryl.alpha.hessian_api_common.service.DemoApi;
 
 /**
  * @author: darryl

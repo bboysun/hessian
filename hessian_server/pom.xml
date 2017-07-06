@@ -10,7 +10,7 @@
 
 	<groupId>com.darryl.alpha</groupId>
 	<artifactId>hessian_server</artifactId>
-	<version>${com.darryl.alpha.version}</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 
 	<name>hessian_test</name>
@@ -21,6 +21,24 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.darryl.alpha</groupId>
+			<artifactId>hessian_model_common</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.darryl.alpha</groupId>
+			<artifactId>hessian_api_common</artifactId>
+			<version>1.0.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

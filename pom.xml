@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.darryl</groupId>
+	<artifactId>alpha</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<name>alpha parent</name>
+
+	<profiles>
+		<profile>
+			<id>local</id>
+			<modules>
+				<module>hessian_api_common</module>
+				<module>hessian_client</module>
+				<module>hessian_server</module>
+				<module>hessian_model_common</module>
+			</modules>
+		</profile>
+	</profiles>
+</project>

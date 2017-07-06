@@ -13,11 +13,14 @@
 
 	<description>service related beans</description>
 	
+	<!-- aspectj日志记录aop -->
+	<aop:aspectj-autoproxy/>
+	
 	<bean id="demoService" class="com.darryl.alpha.hessian_server.service.DemoService" />  
     <bean name="/helloHessian"  
         class="org.springframework.remoting.caucho.HessianServiceExporter">  
         <property name="service" ref="demoService" />  
-        <property name="serviceInterface" value="com.darryl.alpha.hessian_server.service.DemoApi" />  
+        <property name="serviceInterface" value="com.darryl.alpha.hessian_api_common.service.DemoApi" />  
     </bean>  
 	
  </beans>
